@@ -142,7 +142,7 @@ justify-content: space-between;
 }
 .about .about-content .left img{
  height: 400px;
- width: 400px;
+ width: 300px;
  object-fit: cover;
  border-radius: 18px;
 }
