@@ -120,7 +120,7 @@ section{
 .about{
 	background: url("images/banner-5.jpg") repeat center;
 	background-size: cover;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	font-family: 'Montserrate', sans-serif;
 }
 .about .title{
@@ -138,7 +138,8 @@ justify-content: space-between;
 
 }
 .about .about-content .left{
-	width: 30%;
+	width: 45%;
+	margin-right:40px ;
 }
 .about .about-content .left img{
  height: 400px;
@@ -147,10 +148,14 @@ justify-content: space-between;
  border-radius: 18px;
 }
 .about .about-content .right{
+ 
  width: 500px;
+
 }
 .about .about-content .right .text{
+ text-align: center;
  margin-bottom: 20px;
+ margin-left: 10px;
 
 }
 .about .about-content .right p{
@@ -160,7 +165,7 @@ justify-content: space-between;
 /* style for Services section */
 .services{
 	color: black;
-	background: orange;
+	background: darkgray;
 
 }
 .services .title{
@@ -525,7 +530,7 @@ footer span a:hover{
 		background: black;
 		opacity: 90%;
 		text-align: center;
-		padding-top: 80px;
+		padding-top: 90px;
 
 	}
 	.navbar .menu li{
@@ -587,18 +592,10 @@ footer span a:hover{
        		flex-direction: column;
       
 
+
        	}
        .contact .right form .name,	
        .contact .right form .email{
        	margin: 0px;
 	}
 }
-
-
-
-
-
-
-
-
-
