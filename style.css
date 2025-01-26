@@ -21,7 +21,7 @@
 	background: turquoise;
 	z-index: 1;
 }
-.navbar .sticky{
+.navbar.sticky{
      padding: 15px;
      background: tomato;
 
@@ -71,6 +71,12 @@
 .navbar .menu li a:hover{
 	color: red;
 }
+/* menu Button */
+.menu-btn{
+	cursor: pointer;
+
+}
+
 /* style for home section */
 .home{
 	display: flex;
@@ -120,7 +126,7 @@ section{
 .about{
 	background: url("images/banner-5.jpg") repeat center;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	font-family: 'Montserrate', sans-serif;
 }
 .about .title{
@@ -138,8 +144,7 @@ justify-content: space-between;
 
 }
 .about .about-content .left{
-	width: 45%;
-	margin-right:40px ;
+	width: 30%;
 }
 .about .about-content .left img{
  height: 400px;
@@ -148,14 +153,10 @@ justify-content: space-between;
  border-radius: 18px;
 }
 .about .about-content .right{
- 
- width: 500px;
-
+ width: 600px;
 }
 .about .about-content .right .text{
- text-align: center;
  margin-bottom: 20px;
- margin-left: 10px;
 
 }
 .about .about-content .right p{
@@ -165,7 +166,7 @@ justify-content: space-between;
 /* style for Services section */
 .services{
 	color: black;
-	background: darkgray;
+	background: orange;
 
 }
 .services .title{
@@ -525,12 +526,16 @@ footer span a:hover{
 		position: fixed;
 		height: 80vh;
 		width: 100%;
-		left: 0;
+		left: -100%;
 		top: 0;
 		background: black;
 		opacity: 90%;
 		text-align: center;
-		padding-top: 90px;
+		padding-top: 80px;
+		transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+    	left: 0;
 
 	}
 	.navbar .menu li{
@@ -592,10 +597,10 @@ footer span a:hover{
        		flex-direction: column;
       
 
-
        	}
        .contact .right form .name,	
        .contact .right form .email{
        	margin: 0px;
 	}
 }
+
